@@ -1,0 +1,28 @@
+/* Only areas that used red gradients/glows in the original reference use violet.
+   The rest of the site retains the burgundy palette matched to the portrait. */
+.spotlight:after{
+  background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),rgba(155,77,255,.24),transparent 65%);
+}
+.work-card.wide-card .work-info{
+  background:linear-gradient(160deg,#200d36,#10091c);
+}
+.work-card.wide-card .work-info:after{
+  background:radial-gradient(560px 300px at 60% 50%,rgba(155,77,255,.22),transparent 65%);
+}
+.contact-card:before{
+  background:radial-gradient(600px 280px at 50% 0%,rgba(155,77,255,.22),transparent 65%);
+}
+.dots i{
+  --c:#9b4dff!important;
+  background:linear-gradient(135deg,#9b4dff,#230d36);
+}
+.quiz-mascot svg{filter:drop-shadow(0 0 26px rgba(155,77,255,.45))}
+.velocity-card{
+  border-color:rgba(193,138,255,.28);
+  box-shadow:0 24px 80px rgba(0,0,0,.42),0 0 45px rgba(155,77,255,.11);
+}
+.icon-btn.insta{
+  background:linear-gradient(135deg,#5e17c9,#9b4dff,#c18aff);
+  box-shadow:0 0 34px rgba(155,77,255,.35);
+}
+.icon-btn.insta:hover{box-shadow:0 0 46px rgba(155,77,255,.55)}

@@ -1,0 +1,29 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.tsbuildinfo
+test-results/
+
+# Local references, generation notes and one-time migration utilities
+downloads/
+reference.html
+scripts/*
+!scripts/verify.mjs
+!scripts/verify-links.mjs
+
+# Unused source portraits, maps and assets from the removed company section
+public/profile-hero.jpg
+public/himachal-map.jpg
+public/sagar-rauthan.webp
+public/crawl-vision-wordmark-transparent.png
+public/illinois-location.png
+public/illinois-location.webp
+public/illinois-location-burgundy.png
+public/videos/0[0-5].mp4
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*.log
