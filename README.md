@@ -53,6 +53,10 @@ node scripts/verify-links.mjs
 
 The link audit checks desktop navigation, mobile navigation, quiz-result links and the Upwork popup destination. Screenshots and reports are saved to the ignored `test-results/` folder.
 
+## Vercel deployment
+
+Import this repository with its root directory set to `./`. `vercel.json` explicitly selects the Next.js framework, runs `npm ci` and `npm run build`, and uses `.next` as the output directory so the app is not deployed as a public-assets-only static site.
+
 ## Stack
 
 Next.js App Router, React, TypeScript, Tailwind CSS, Radix/shadcn-style components, Motion and Lucide. Install the locked dependency versions with `npm ci`.
