@@ -14,7 +14,7 @@ export const portfolioCategories = [
   { name: "Fashion & Apparel Promotional Ads", publicIds: numbered("fnapa", 10) },
   // Assumes the same foyb prefix throughout; change any individual ID if needed.
   { name: "Focusing On Your Brand", publicIds: numbered("foyb", 10) },
-  { name: "Talking Head Premium Edit", publicIds: numbered("thpe", 9) },
+  { name: "Talking Head Premium Edit", publicIds: numbered("thpe", 9).filter(id => id !== "thpe05") },
 ];
 
 // For non-numbered uploads, use: publicIds: ["ugc01", "ugc02", "my-new-video"]
