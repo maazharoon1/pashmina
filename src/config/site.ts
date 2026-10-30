@@ -4,9 +4,8 @@ export const site = {
   brandFirst: "PASH",
   brandLast: "MINA",
   contact: {
-    // Add Pashmina's own details here to enable these two placeholder icons.
-    email: "",
-    linkedin: "",
+    email: "pashminakhan12469@gmail.com",
+    linkedin: "https://www.linkedin.com/in/pashmina-khan-199805447/",
     upwork: "https://www.upwork.com/freelancers/~01de153e8ce8e49ba2?referrer_url_path=%2Fnx%2Fsearch%2Ftalent%2Fdetails%2F~01de153e8ce8e49ba2%2Fprofile",
   },
   title: "Video Editor & Creative Producer",
@@ -16,6 +15,6 @@ export const site = {
 /** Keeps the original copy while consistently replacing the portfolio name. */
 export function personalize(value: string) {
   return value
-    .replaceAll("Jaspal", site.name)
-    .replaceAll("JASPAL", site.name.toUpperCase());
+    .replaceAll("Pashmina", site.name)
+    .replaceAll("Pashmina", site.name.toUpperCase());
 }

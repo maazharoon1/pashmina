@@ -8,8 +8,8 @@ export function AboutSection() { return (<section className={"section"} id={"abo
 <h2 className={"heading"}>{"Creative thinking."}<br  /><span >{"Measurable growth."}</span></h2>
 </div>
 <div >
-<p className={"muted"} style={{"fontSize":"18px"} as React.CSSProperties}>{"I'm "}<b style={{"color":"#fff"} as React.CSSProperties}>{personalize("Jaspal")}</b>{", a video editor and creative producer working with "}<b style={{"color":"#fff"} as React.CSSProperties}>{"Crawl Vision"}</b>{" to strengthen brands through video production and digital-first creative strategy."}</p>
-<p className={"muted"} style={{"marginTop":"18px"} as React.CSSProperties}>{"Our production focus includes short-form videos, AI UGC, talking-head content, product creatives and selected long-form projects—supported by a team-led approach to planning, creative decisions and delivery. Professional enquiries are handled by Crawl Vision."}</p>
+<p className={"muted"} style={{"fontSize":"18px"} as React.CSSProperties}>{"I'm "}<b style={{"color":"#fff"} as React.CSSProperties}>{personalize("Pashmina")}</b>{", a video editor and creative producer working with "}<b style={{"color":"#fff"} as React.CSSProperties}>{"Vidicraze"}</b>{" to strengthen brands through video production and digital-first creative strategy."}</p>
+<p className={"muted"} style={{"marginTop":"18px"} as React.CSSProperties}>{"Our production focus includes short-form videos, AI UGC, talking-head content, product creatives and selected long-form projects—supported by a team-led approach to planning, creative decisions and delivery. Professional enquiries are handled by Vidicraze."}</p>
 <div className={"point-grid"}>
 <div className={"point"}><span className={"check"}>{"✓"}</span>{" Hook-first editing style"}</div>
 <div className={"point"}><span className={"check"}>{"✓"}</span>{" Retention-optimized pacing"}</div>

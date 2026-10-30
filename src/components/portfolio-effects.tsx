@@ -79,13 +79,6 @@ export function PortfolioEffects() {
         el.addEventListener("mouseleave", () => { el.style.transform = ""; }, { signal });
       });
     }
-    const messages = ["Hey 👋 still exploring?", "That video you just saw? Took 40 hours to perfect.", "Fun fact: I've edited 120+ projects.", "Your scroll speed says you're interested 😏", "Every cut has a reason. Every frame has a purpose.", "Psst... the pricing's a few scrolls away 💰", "I don't just edit. I engineer attention.", "Illinois to your screen — one edit at a time.", "Curious what I could do for your brand?", "Tap me, let's make something people can't scroll past. 💬"];
-    let messageIndex = 0;
-    const timer = window.setInterval(() => {
-      const buddy = document.getElementById("floatBuddy");
-      const message = document.getElementById("floatMsg");
-      if (!document.hidden && buddy?.classList.contains("show") && message) message.textContent = messages[messageIndex++ % messages.length];
-    }, 3600);
     // Match the reference's subtle button tick after a real user interaction.
     let audio: AudioContext | undefined;
     document.addEventListener("click", event => {
@@ -102,7 +95,7 @@ export function PortfolioEffects() {
         source.connect(filter); filter.connect(gain); gain.connect(audio.destination); source.start();
       } catch { /* Browsers may prohibit Web Audio; navigation still works. */ }
     }, { signal });
-    return () => { abort.abort(); observer.disconnect(); cancelAnimationFrame(frame); clearInterval(timer); void audio?.close(); };
+    return () => { abort.abort(); observer.disconnect(); cancelAnimationFrame(frame); void audio?.close(); };
   }, []);
   return null;
 }

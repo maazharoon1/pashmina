@@ -15,6 +15,7 @@
     "lucide-react": "latest",
     "motion": "latest",
     "next": "16.4.3",
+    "nodemailer": "^10.3.1",
     "radix-ui": "latest",
     "react": "latest",
     "react-dom": "latest",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "latest",
     "@types/node": "latest",
+    "@types/nodemailer": "^8.0.2",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",

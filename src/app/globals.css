@@ -764,55 +764,55 @@
     }
 
 
-    .jaspal-hanging-photo{display:block;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 8px 8px rgba(15,20,28,.18));}
+    .Pashmina-hanging-photo{display:block;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 8px 8px rgba(15,20,28,.18));}
     .spidey-drop{width:clamp(95px,10vw,140px)!important;top:-220px;animation:spideyArrive 1.8s cubic-bezier(.2,.75,.25,1) .35s forwards!important;}
     .wire-intro.is-blasting .spidey-drop{animation:spideyFall .95s cubic-bezier(.3,.05,.6,1) forwards!important;}
-    @media(max-width:700px){.spidey-drop{width:86px!important;top:-220px}.jaspal-hanging-photo{width:100%}}
+    @media(max-width:700px){.spidey-drop{width:86px!important;top:-220px}.Pashmina-hanging-photo{width:100%}}
 
 
     /* Visibility hotfix: keep the hanging portrait in the visible hero area */
     .wire-intro .spidey-drop{display:block!important;visibility:visible!important;opacity:1!important;left:50%!important;width:clamp(100px,12vw,150px)!important;transform:translateX(-50%)!important;z-index:8!important;overflow:visible!important;animation:portraitDropIn 1.5s cubic-bezier(.2,.75,.25,1) .25s both!important}
-    .wire-intro .jaspal-hanging-photo{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:auto!important;min-height:120px;object-fit:contain!important;position:relative!important;z-index:2!important}
+    .wire-intro .Pashmina-hanging-photo{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:auto!important;min-height:120px;object-fit:contain!important;position:relative!important;z-index:2!important}
     .wire-intro .spidey-web{display:block!important;left:50%!important;top:-8vh!important;height:8vh!important;z-index:1!important}
     @keyframes portraitDropIn{0%{top:-30vh;transform:translateX(-50%) rotate(-8deg);opacity:0}100%{top:8vh;transform:translateX(-50%) rotate(0);opacity:1}}
     .wire-intro.is-blasting .spidey-drop{animation:spideyFall .95s cubic-bezier(.3,.05,.6,1) forwards!important}
-    @media(max-width:700px){.wire-intro .spidey-drop{width:92px!important}.wire-intro .jaspal-hanging-photo{min-height:100px}}
+    @media(max-width:700px){.wire-intro .spidey-drop{width:92px!important}.wire-intro .Pashmina-hanging-photo{min-height:100px}}
 
 
     /* Hard fallback for portrait: reserve visible space even if embedded image decode fails */
     .wire-intro .spidey-drop{position:absolute!important;display:block!important;visibility:visible!important;opacity:1!important;left:50%!important;width:clamp(130px,14vw,180px)!important;height:auto!important;min-height:180px!important;overflow:visible!important;z-index:50!important;pointer-events:none!important;transform:translateX(-50%)!important;animation:portraitDropIn 1.4s ease-out .2s both!important}
-    .wire-intro .jaspal-hanging-photo{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;width:100%!important;height:auto!important;min-height:180px!important;object-fit:contain!important;z-index:51!important}
+    .wire-intro .Pashmina-hanging-photo{display:block!important;visibility:visible!important;opacity:1!important;position:relative!important;width:100%!important;height:auto!important;min-height:180px!important;object-fit:contain!important;z-index:51!important}
     .wire-intro .spidey-web{position:absolute!important;display:block!important;visibility:visible!important;opacity:1!important;left:50%!important;top:-7vh!important;height:7vh!important;width:2px!important;z-index:1!important}
     @keyframes portraitDropIn{from{top:-25vh;transform:translateX(-50%) rotate(-8deg);opacity:.3}to{top:7vh;transform:translateX(-50%) rotate(0);opacity:1}}
     .wire-intro.is-blasting .spidey-drop{animation:spideyFall .95s cubic-bezier(.3,.05,.6,1) forwards!important}
-    @media(max-width:700px){.wire-intro .spidey-drop{width:112px!important;min-height:140px!important}.wire-intro .jaspal-hanging-photo{min-height:140px!important}}
+    @media(max-width:700px){.wire-intro .spidey-drop{width:112px!important;min-height:140px!important}.wire-intro .Pashmina-hanging-photo{min-height:140px!important}}
 
 
-    /* Final Jaspal character animation override */
+    /* Final Pashmina character animation override */
     .wire-intro .spidey-drop{
       position:absolute!important;left:50%!important;
       width:clamp(105px,11vw,145px)!important;height:auto!important;min-height:0!important;
       display:block!important;visibility:visible!important;opacity:1!important;
       overflow:visible!important;z-index:50!important;pointer-events:none!important;
       transform:translateX(-50%) rotate(-8deg)!important;
-      animation:jaspalEnter 1.65s cubic-bezier(.2,.72,.25,1) .25s forwards!important;
+      animation:PashminaEnter 1.65s cubic-bezier(.2,.72,.25,1) .25s forwards!important;
       filter:drop-shadow(0 10px 10px rgba(0,0,0,.2))!important;
     }
-    .wire-intro .jaspal-hanging-photo{
+    .wire-intro .Pashmina-hanging-photo{
       display:block!important;width:100%!important;height:auto!important;min-height:0!important;
       max-width:none!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;
     }
     .wire-intro .spidey-web{display:block!important;left:50%!important;top:-10vh!important;height:10vh!important;width:2px!important}
-    @keyframes jaspalEnter{
+    @keyframes PashminaEnter{
       0%{top:-230px;transform:translateX(-50%) rotate(-9deg);opacity:0}
       75%{top:12vh;transform:translateX(-50%) rotate(5deg);opacity:1}
       88%{top:10vh;transform:translateX(-50%) rotate(-3deg);opacity:1}
       100%{top:11vh;transform:translateX(-50%) rotate(0);opacity:1}
     }
     .wire-intro.is-blasting .spidey-drop{
-      animation:jaspalFall .95s cubic-bezier(.28,.04,.62,1) forwards!important;
+      animation:PashminaFall .95s cubic-bezier(.28,.04,.62,1) forwards!important;
     }
-    @keyframes jaspalFall{
+    @keyframes PashminaFall{
       0%{top:11vh;transform:translateX(-50%) rotate(0) scale(1)}
       18%{top:15vh;transform:translateX(-50%) rotate(16deg) scale(1.04)}
       48%{top:39vh;transform:translateX(-50%) rotate(85deg) scale(1.03)}
@@ -821,9 +821,9 @@
     }
     @media(max-width:700px){
       .wire-intro .spidey-drop{width:clamp(90px,24vw,112px)!important;top:-190px!important}
-      .wire-intro .jaspal-hanging-photo{min-height:0!important}
-      @keyframes jaspalEnter{0%{top:-190px;transform:translateX(-50%) rotate(-9deg);opacity:0}75%{top:11vh;transform:translateX(-50%) rotate(5deg);opacity:1}88%{top:9vh;transform:translateX(-50%) rotate(-3deg);opacity:1}100%{top:10vh;transform:translateX(-50%) rotate(0);opacity:1}}
-      @keyframes jaspalFall{0%{top:10vh;transform:translateX(-50%) rotate(0)}22%{top:20vh;transform:translateX(-50%) rotate(30deg)}55%{top:47vh;transform:translateX(-50%) rotate(125deg)}80%{top:63vh;transform:translateX(-50%) rotate(220deg)}100%{top:70vh;transform:translateX(-50%) rotate(260deg);opacity:.96}}
+      .wire-intro .Pashmina-hanging-photo{min-height:0!important}
+      @keyframes PashminaEnter{0%{top:-190px;transform:translateX(-50%) rotate(-9deg);opacity:0}75%{top:11vh;transform:translateX(-50%) rotate(5deg);opacity:1}88%{top:9vh;transform:translateX(-50%) rotate(-3deg);opacity:1}100%{top:10vh;transform:translateX(-50%) rotate(0);opacity:1}}
+      @keyframes PashminaFall{0%{top:10vh;transform:translateX(-50%) rotate(0)}22%{top:20vh;transform:translateX(-50%) rotate(30deg)}55%{top:47vh;transform:translateX(-50%) rotate(125deg)}80%{top:63vh;transform:translateX(-50%) rotate(220deg)}100%{top:70vh;transform:translateX(-50%) rotate(260deg);opacity:.96}}
     }
 
 
@@ -833,17 +833,17 @@
       height:auto!important;min-height:0!important;display:block!important;
       visibility:visible!important;opacity:1!important;z-index:100!important;
       overflow:visible!important;transform:translateX(-50%)!important;
-      animation:jaspalEnter 1.65s cubic-bezier(.2,.72,.25,1) .25s forwards!important;
+      animation:PashminaEnter 1.65s cubic-bezier(.2,.72,.25,1) .25s forwards!important;
     }
-    .wire-intro .jaspal-hanging-photo{
+    .wire-intro .Pashmina-hanging-photo{
       display:block!important;visibility:visible!important;opacity:1!important;
       width:100%!important;height:auto!important;min-height:0!important;
       max-height:42vh!important;object-fit:contain!important;
     }
-    .wire-intro.is-blasting .spidey-drop{animation:jaspalFall .95s cubic-bezier(.28,.04,.62,1) forwards!important}
+    .wire-intro.is-blasting .spidey-drop{animation:PashminaFall .95s cubic-bezier(.28,.04,.62,1) forwards!important}
     @media(max-width:700px){
       .wire-intro .spidey-drop{width:clamp(120px,31vw,155px)!important}
-      .wire-intro .jaspal-hanging-photo{max-height:34vh!important}
+      .wire-intro .Pashmina-hanging-photo{max-height:34vh!important}
     }
 
 
@@ -881,11 +881,11 @@
     .wire-intro .spidey-drop{
       top:11vh;
       transform:translateX(-50%) rotate(0);
-      animation:jaspalEnter 1.65s cubic-bezier(.2,.72,.25,1) .25s forwards!important;
+      animation:PashminaEnter 1.65s cubic-bezier(.2,.72,.25,1) .25s forwards!important;
       will-change:top,transform;
     }
     .wire-intro.is-blasting .spidey-drop{
-      animation:jaspalFall 2.1s cubic-bezier(.28,.04,.62,1) forwards!important;
+      animation:PashminaFall 2.1s cubic-bezier(.28,.04,.62,1) forwards!important;
     }
     @media(max-width:700px){
       .wire-intro .spidey-drop{top:10vh;width:clamp(120px,31vw,155px)!important}
@@ -901,7 +901,7 @@
       transform:translateX(-50%) translateY(0) rotate(0)!important;
       animation:characterIntroStable 1.65s cubic-bezier(.2,.72,.25,1) .25s both!important;
     }
-    .wire-intro .jaspal-hanging-photo{
+    .wire-intro .Pashmina-hanging-photo{
       display:block!important;visibility:visible!important;opacity:1!important;
       width:100%!important;height:auto!important;min-height:0!important;
       max-height:42vh!important;object-fit:contain!important;
@@ -926,7 +926,7 @@
     @media(max-width:700px){
       .wire-intro .spidey-drop{top:10vh!important;width:clamp(120px,31vw,155px)!important}
       .wire-intro.is-blasting .spidey-drop{top:10vh!important}
-      .wire-intro .jaspal-hanging-photo{max-height:34vh!important}
+      .wire-intro .Pashmina-hanging-photo{max-height:34vh!important}
     }
 
 

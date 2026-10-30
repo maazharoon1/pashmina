@@ -1,3 +1,5 @@
+import { portfolioProjects } from "./portfolio";
+
 /** Replace source with a Cloudinary delivery URL, OR set cloudinaryPublicId + the cloud name in .env.local. */
 export type MediaItem = { source: string; poster: string; cloudinaryPublicId: string };
 export const videos: Record<string, MediaItem> = {
@@ -66,6 +68,8 @@ export const images: Record<string, string> = {
 };
 export function imageSource(key: string) { return images[key] || key; }
 export function videoSource(key: string) {
+  const project = portfolioProjects.find(project => project.key === key);
+  if (project) return project.source;
   const item = videos[key];
   if (!item) return '';
   const cloud = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;

@@ -12,7 +12,7 @@ export function ServicesSection() { return (<section className={"section"} id={"
 <article className={"service glass spotlight"}><div className={"icon"}>{"⚡"}</div><h3 >{"Short-Form Video Production"}</h3><p >{"Reels, Shorts and vertical campaigns designed around strong hooks, clear storytelling and audience retention."}</p></article>
 <article className={"service glass spotlight"}><div className={"icon"}>{"✦"}</div><h3 >{"AI UGC & Talking-Head Videos"}</h3><p >{"Creator-style ads, spokesperson content and AI-assisted videos tailored to your brief and audience."}</p></article>
 <article className={"service glass spotlight"}><div className={"icon"}>{"▶"}</div><h3 >{"Long-Form & Brand Videos"}</h3><p >{"YouTube edits, explainers, product videos and brand stories with considered pacing and clean delivery."}</p></article>
-<article className={"service glass spotlight"}><div className={"icon"}>{"↗"}</div><h3 >{"Digital Growth Services"}</h3><p >{"SEO, AI search visibility, social creative, paid media support and website design and development through Crawl Vision."}</p></article>
+<article className={"service glass spotlight"}><div className={"icon"}>{"↗"}</div><h3 >{"Digital Growth Services"}</h3><p >{"SEO, AI search visibility, social creative, paid media support and website design and development through Vidicraze."}</p></article>
 </div>
 </div>
 </section>); }
