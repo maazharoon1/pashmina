@@ -481,3 +481,12 @@ export const portfolioCategories = Array.from(
   new Set(portfolioProjects.map(project => project.category)),
   name => ({ name }),
 );
+
+// Show one project from each category per round, preserving order within categories.
+const projectGroups = portfolioCategories.map(({ name }) =>
+  portfolioProjects.filter(project => project.category === name),
+);
+export const interleavedPortfolioProjects = Array.from(
+  { length: Math.max(0, ...projectGroups.map(group => group.length)) },
+  (_, index) => projectGroups.flatMap(group => group[index] ? [group[index]] : []),
+).flat();

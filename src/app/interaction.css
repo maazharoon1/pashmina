@@ -37,7 +37,8 @@
 .phone img{object-position:center 27.5%}
 .float-avatar img{object-position:center 20%}
 .work-card.wide-card .work-info{left:auto;right:auto;bottom:auto;min-width:0}
-section[id]{scroll-margin-top:110px}
+/* Section padding already provides clearance below the fixed navigation. */
+section[id]{scroll-margin-top:0}
 .skip-link{position:fixed;top:8px;left:8px;z-index:100;padding:12px 18px;background:#9d2c41;transform:translateY(-150%)}
 .skip-link:focus{transform:translateY(0)}
 a:focus-visible,button:focus-visible{outline:2px solid #f7ced4;outline-offset:5px}
@@ -52,9 +53,12 @@ a:focus-visible,button:focus-visible{outline:2px solid #f7ced4;outline-offset:5p
 .icon-btn.contact-placeholder{opacity:.5;cursor:default;box-shadow:none}
 .icon-btn.contact-placeholder:hover{transform:none;box-shadow:none}
 .icon-btn.linkedin{background:#0a66c2;border-color:#0a66c2}
+.icon-btn.facebook{background:#1877f2;border-color:#1877f2;box-shadow:0 0 30px rgba(24,119,242,.2)}
+.icon-btn.facebook:hover{box-shadow:0 0 36px rgba(24,119,242,.35)}
 .icon-btn.upwork{background:#14a800;border-color:#14a800;box-shadow:0 0 30px rgba(20,168,0,.2)}
 .icon-btn.upwork:hover{box-shadow:0 0 36px rgba(20,168,0,.35)}
-.upwork-wordmark{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:800;letter-spacing:-.09em;padding-right:3px}
+.contact-method .icon-btn svg{width:26px;height:26px;flex-shrink:0}
+.upwork-wordmark{font-family:Inter,Arial,sans-serif;font-size:26px;font-weight:600;line-height:1;letter-spacing:-.06em}
 .mobile-menu-trigger{display:none!important}
 .mobile-nav-overlay{position:fixed;inset:0;background:rgba(9,2,3,.75);backdrop-filter:blur(12px);z-index:80}
 .mobile-nav-panel{position:fixed;right:12px;top:12px;width:min(360px,calc(100% - 24px));padding:68px 28px 32px;border:1px solid rgba(240,160,170,.35);border-radius:20px;background:#1a0c10;z-index:81;box-shadow:0 30px 90px #0008}

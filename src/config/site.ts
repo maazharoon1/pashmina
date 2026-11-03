@@ -6,6 +6,8 @@ export const site = {
   contact: {
     email: "pashminakhan12469@gmail.com",
     linkedin: "https://www.linkedin.com/in/pashmina-khan-199805447/",
+    facebook: "https://www.facebook.com/profile.php?id=61596097505889",
+    instagram: "https://www.instagram.com/pashmina.artist/",
     upwork: "https://www.upwork.com/freelancers/~01de153e8ce8e49ba2?referrer_url_path=%2Fnx%2Fsearch%2Ftalent%2Fdetails%2F~01de153e8ce8e49ba2%2Fprofile",
   },
   title: "Video Editor & Creative Producer",

@@ -6,6 +6,8 @@ export function ContactSection() {
     { name: "Email", className: "mail", href: site.contact.email ? `mailto:${site.contact.email}` : "", icon: <Mail size={26} /> },
     { name: "LinkedIn", className: "linkedin", href: site.contact.linkedin, icon: <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M6.5 8.2H3.2V20h3.3V8.2ZM4.85 3A1.95 1.95 0 1 0 4.85 6.9 1.95 1.95 0 0 0 4.85 3ZM20.8 13.25c0-3.55-1.9-5.2-4.45-5.2-2.05 0-2.97 1.13-3.48 1.92V8.2H9.57V20h3.3v-5.84c0-1.54.29-3.03 2.2-3.03 1.88 0 1.9 1.76 1.9 3.13V20h3.3l.01-6.75Z" /></svg> },
     { name: "Upwork", className: "upwork", href: site.contact.upwork, icon: <span className="upwork-wordmark" aria-hidden="true">up</span> },
+    { name: "Facebook", className: "facebook", href: site.contact.facebook, icon: <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M14 21v-8h3l.5-4H14V7c0-1 .3-2 2-2h2V1.5A25 25 0 0 0 15 1c-3 0-5 1.8-5 5v3H7v4h3v8h4Z" /></svg> },
+    { name: "Instagram", className: "insta", href: site.contact.instagram, icon: <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg> },
   ];
   return <section className="section" id="contact">
     <div className="container">

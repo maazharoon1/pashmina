@@ -1,4 +1,4 @@
-import { portfolioCategories, portfolioProjects } from '@/config/portfolio';
+import { portfolioCategories, interleavedPortfolioProjects } from '@/config/portfolio';
 import { PortfolioVideo } from '@/components/portfolio-video';
 
 export function WorkSection() { return (<section className={"section"} id={"work"}>
@@ -30,7 +30,7 @@ export function WorkSection() { return (<section className={"section"} id={"work
 </div>
 </article>
 </div>
-{portfolioProjects.map(project => <div className="work-float" key={project.id}>
+{interleavedPortfolioProjects.map(project => <div className="work-float" key={project.id}>
 <article className="work-card glass" data-cat={project.category} data-title={project.title}>
 <PortfolioVideo mediaKey={`portfolio:${project.id}`} className="work-video" label={project.title} />
 <div className="work-info">
