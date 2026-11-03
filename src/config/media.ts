@@ -68,8 +68,8 @@ export const images: Record<string, string> = {
 };
 export function imageSource(key: string) { return images[key] || key; }
 export function videoSource(key: string) {
-  const project = portfolioProjects.find(project => project.key === key);
-  if (project) return project.source;
+  const project = portfolioProjects.find(project => `portfolio:${project.id}` === key);
+  if (project) return project.url;
   const item = videos[key];
   if (!item) return '';
   const cloud = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;

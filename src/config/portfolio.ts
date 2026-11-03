@@ -1,30 +1,483 @@
-/** Edit this file to add videos or categories. IDs must match Cloudinary exactly. */
-export const portfolioCloudName = "ivxpjqou";
+/** Edit an object to change a video, its category, title, or Cloudinary URL. */
+export type PortfolioProject = {
+  id: string;
+  category: string;
+  title: string;
+  url: string;
+};
 
-// Increase the count when uploading more numbered videos (e.g. ugc11).
-const numbered = (prefix: string, count: number) =>
-  Array.from({ length: count }, (_, index) => `${prefix}${String(index + 1).padStart(2, "0")}`);
-
-export const portfolioCategories = [
-  { name: "UGC Content", publicIds: numbered("ugc", 10) },
-  { name: "Beauty & Skincare Promotional Ads", publicIds: numbered("basc", 10) },
-  { name: "Car Edit", publicIds: numbered("ce", 10) },
-  { name: "Commercial Tech Reel", publicIds: numbered("ctr", 10) },
-  { name: "Documentary and Motion Graphics", publicIds: numbered("damg", 10) },
-  { name: "Fashion & Apparel Promotional Ads", publicIds: numbered("fnapa", 10) },
-  // Assumes the same foyb prefix throughout; change any individual ID if needed.
-  { name: "Focusing On Your Brand", publicIds: numbered("foyb", 10) },
-  { name: "Talking Head Premium Edit", publicIds: numbered("thpe", 9).filter(id => id !== "thpe05") },
+export const portfolioProjects: PortfolioProject[] = [
+  {
+    id: "ugc01",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc01.mp4",
+  },
+  {
+    id: "ugc02",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc02.mp4",
+  },
+  {
+    id: "ugc03",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc03.mp4",
+  },
+  {
+    id: "ugc04",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc04.mp4",
+  },
+  {
+    id: "ugc05",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc05.mp4",
+  },
+  {
+    id: "ugc06",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc06.mp4",
+  },
+  {
+    id: "ugc07",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc07.mp4",
+  },
+  {
+    id: "ugc08",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc08.mp4",
+  },
+  {
+    id: "ugc09",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc09.mp4",
+  },
+  {
+    id: "ugc10",
+    category: "UGC Content",
+    title: "UGC Content",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ugc10.mp4",
+  },
+  {
+    id: "basc01",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc01.mp4",
+  },
+  {
+    id: "basc02",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc02.mp4",
+  },
+  {
+    id: "basc03",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc03.mp4",
+  },
+  {
+    id: "basc04",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc04.mp4",
+  },
+  {
+    id: "basc05",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc05.mp4",
+  },
+  {
+    id: "basc06",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc06.mp4",
+  },
+  {
+    id: "basc07",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc07.mp4",
+  },
+  {
+    id: "basc08",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc08.mp4",
+  },
+  {
+    id: "basc09",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc09.mp4",
+  },
+  {
+    id: "basc10",
+    category: "Beauty & Skincare Promotional Ads",
+    title: "Beauty & Skincare Promotional Ad",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/basc10.mp4",
+  },
+  {
+    id: "ce01",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce01.mp4",
+  },
+  {
+    id: "ce02",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce02.mp4",
+  },
+  {
+    id: "ce03",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce03.mp4",
+  },
+  {
+    id: "ce04",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce04.mp4",
+  },
+  {
+    id: "ce05",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce05.mp4",
+  },
+  {
+    id: "ce06",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce06.mp4",
+  },
+  {
+    id: "ce07",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce07.mp4",
+  },
+  {
+    id: "ce08",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce08.mp4",
+  },
+  {
+    id: "ce09",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce09.mp4",
+  },
+  {
+    id: "ce10",
+    category: "Car Edit",
+    title: "Car Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ce10.mp4",
+  },
+  {
+    id: "ctr01",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr01.mp4",
+  },
+  {
+    id: "ctr02",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr02.mp4",
+  },
+  {
+    id: "ctr03",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr03.mp4",
+  },
+  {
+    id: "ctr04",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr04.mp4",
+  },
+  {
+    id: "ctr05",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr05.mp4",
+  },
+  {
+    id: "ctr06",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr06.mp4",
+  },
+  {
+    id: "ctr07",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr07.mp4",
+  },
+  {
+    id: "ctr08",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr08.mp4",
+  },
+  {
+    id: "ctr09",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr09.mp4",
+  },
+  {
+    id: "ctr10",
+    category: "Commercial Tech Reel",
+    title: "Commercial Tech Reel",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/ctr10.mp4",
+  },
+  {
+    id: "damg01",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg01.mp4",
+  },
+  {
+    id: "damg02",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg02.mp4",
+  },
+  {
+    id: "damg03",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg03.mp4",
+  },
+  {
+    id: "damg04",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg04.mp4",
+  },
+  {
+    id: "damg05",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg05.mp4",
+  },
+  {
+    id: "damg06",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg06.mp4",
+  },
+  {
+    id: "damg07",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg07.mp4",
+  },
+  {
+    id: "damg08",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg08.mp4",
+  },
+  {
+    id: "damg09",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg09.mp4",
+  },
+  {
+    id: "damg10",
+    category: "Documentary and Motion Graphics",
+    title: "Documentary and Motion Graphics",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/damg10.mp4",
+  },
+  {
+    id: "fnapa01",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa01.mp4",
+  },
+  {
+    id: "fnapa02",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa02.mp4",
+  },
+  {
+    id: "fnapa03",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa03.mp4",
+  },
+  {
+    id: "fnapa04",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa04.mp4",
+  },
+  {
+    id: "fnapa05",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa05.mp4",
+  },
+  {
+    id: "fnapa06",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa06.mp4",
+  },
+  {
+    id: "fnapa07",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa07.mp4",
+  },
+  {
+    id: "fnapa08",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa08.mp4",
+  },
+  {
+    id: "fnapa09",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa09.mp4",
+  },
+  {
+    id: "fnapa10",
+    category: "Fashion & Apparel Promotional Ads",
+    title: "Fashion & Apparel Promotional Ads",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa10.mp4",
+  },
+  {
+    id: "foyb01",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb01.mp4",
+  },
+  {
+    id: "foyb02",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb02.mp4",
+  },
+  {
+    id: "foyb03",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb03.mp4",
+  },
+  {
+    id: "foyb04",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb04.mp4",
+  },
+  {
+    id: "foyb05",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb05.mp4",
+  },
+  {
+    id: "foyb06",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb06.mp4",
+  },
+  {
+    id: "foyb07",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb07.mp4",
+  },
+  {
+    id: "foyb08",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb08.mp4",
+  },
+  {
+    id: "foyb09",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb09.mp4",
+  },
+  {
+    id: "foyb10",
+    category: "Focusing On Your Brand",
+    title: "Focusing On Your Brand",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/foyb10.mp4",
+  },
+  {
+    id: "thpe01",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe01.mp4",
+  },
+  {
+    id: "thpe02",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe02.mp4",
+  },
+  {
+    id: "thpe03",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe03.mp4",
+  },
+  {
+    id: "thpe04",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe04.mp4",
+  },
+  {
+    id: "thpe06",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe06.mp4",
+  },
+  {
+    id: "thpe07",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe07.mp4",
+  },
+  {
+    id: "thpe08",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe08.mp4",
+  },
+  {
+    id: "thpe09",
+    category: "Talking Head Premium Edit",
+    title: "Talking Head Premium Edit",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe09.mp4",
+  },
 ];
 
-// For non-numbered uploads, use: publicIds: ["ugc01", "ugc02", "my-new-video"]
-// Full Cloudinary URLs can also be used in publicIds.
-export const portfolioProjects = portfolioCategories.flatMap(category =>
-  category.publicIds.map((publicId, index) => ({
-    key: `portfolio:${publicId}`,
-    category: category.name,
-    title: `${category.name} ${String(index + 1).padStart(2, "0")}`,
-    source: publicId.startsWith("https://") ? publicId :
-      `https://res.cloudinary.com/${portfolioCloudName}/video/upload/${publicId.split("/").map(encodeURIComponent).join("/")}.mp4`,
-  }))
+export const portfolioCategories = Array.from(
+  new Set(portfolioProjects.map(project => project.category)),
+  name => ({ name }),
 );

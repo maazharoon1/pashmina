@@ -30,9 +30,12 @@ export function WorkSection() { return (<section className={"section"} id={"work
 </div>
 </article>
 </div>
-{portfolioProjects.map(project => <div className="work-float" key={project.key}>
+{portfolioProjects.map(project => <div className="work-float" key={project.id}>
 <article className="work-card glass" data-cat={project.category} data-title={project.title}>
-<PortfolioVideo mediaKey={project.key} className="work-video" label={project.title} />
+<PortfolioVideo mediaKey={`portfolio:${project.id}`} className="work-video" label={project.title} />
+<div className="work-info">
+<p className="work-title">{project.title}</p>
+</div>
 </article>
 </div>)}
 </div>
