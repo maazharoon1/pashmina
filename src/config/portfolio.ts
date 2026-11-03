@@ -338,12 +338,6 @@ export const portfolioProjects: PortfolioProject[] = [
     url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa05.mp4",
   },
   {
-    id: "fnapa06",
-    category: "Fashion & Apparel Promotional Ads",
-    title: "Fashion & Apparel Promotional Ads",
-    url: "https://res.cloudinary.com/ivxpjqou/video/upload/fnapa06.mp4",
-  },
-  {
     id: "fnapa07",
     category: "Fashion & Apparel Promotional Ads",
     title: "Fashion & Apparel Promotional Ads",
