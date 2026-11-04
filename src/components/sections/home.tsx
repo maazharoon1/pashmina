@@ -9,7 +9,7 @@ export function HomeSection() { return (<section className={"hero"} id={"home"}>
 <h1 className={"hero-name"} aria-label={personalize("Pashmina")}>{personalize("Pashmina")}</h1>
 <div className={"underline"}></div>
 <p className={"role"}>{"Video Editor & Creative Producer"}</p>
-<p className={"tagline"}>{"I create engaging, story-driven videos for brands, creators and businesses—combining strong hooks, thoughtful pacing and a cinematic finish. For professionally managed business projects, I collaborate with Vidicraze's team."}</p>
+<p className={"tagline"}>{"I create engaging, story-driven videos for brands, creators and  combining strong hooks, thoughtful pacing and a cinematic finish. For professionally managed business projects, I collaborate with Vidicraze's team."}</p>
 <div className={"actions"}>
 <a className={"btn btn-primary"} href="#contact">{"Discuss a Business Project ↗"}</a>
 <a className={"btn btn-ghost"} href={"#work"}>{"▶ View My Work"}</a>
