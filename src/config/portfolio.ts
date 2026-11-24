@@ -469,6 +469,42 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Talking Head Premium Edit",
     url: "https://res.cloudinary.com/ivxpjqou/video/upload/thpe09.mp4",
   },
+  {
+    id: "se01",
+    category: "SaaS Explainer",
+    title: "SaaS Explainer",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/SE01.mp4",
+  },
+  {
+    id: "se02",
+    category: "SaaS Explainer",
+    title: "SaaS Explainer",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/SE02.mp4",
+  },
+  {
+    id: "se03",
+    category: "SaaS Explainer",
+    title: "SaaS Explainer",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/SE03.mp4",
+  },
+  {
+    id: "se04",
+    category: "SaaS Explainer",
+    title: "SaaS Explainer",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/SE04.mp4",
+  },
+  {
+    id: "se05",
+    category: "SaaS Explainer",
+    title: "SaaS Explainer",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/SE05.mp4",
+  },
+  {
+    id: "se06",
+    category: "SaaS Explainer",
+    title: "SaaS Explainer",
+    url: "https://res.cloudinary.com/ivxpjqou/video/upload/SE06.mp4",
+  },
 ];
 
 export const portfolioCategories = Array.from(
