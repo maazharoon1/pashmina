@@ -14,7 +14,7 @@
     "clsx": "latest",
     "lucide-react": "latest",
     "motion": "latest",
-    "next": "16.4.3",
+    "next": "16.4.6",
     "nodemailer": "^10.3.1",
     "radix-ui": "latest",
     "react": "latest",
@@ -28,7 +28,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
-    "eslint-config-next": "16.4.3",
+    "eslint-config-next": "16.4.6",
     "playwright": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
